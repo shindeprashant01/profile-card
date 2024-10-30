@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto auto;
+
+}
+.profile-card {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  /* margin-top: 2rem; */
+    max-width: 21rem;
+    padding: 20px;
+    margin:  auto 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-photo {
+    width: 100px;
+    /* height: 100px; */
+    border-radius: 10%;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    margin: 10px 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  h3 {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  p {
+    color: #555;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #0073b1; /* Color for LinkedIn, GitHub, Twitter */
+   
+  }
+  
+  .contact-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .toggle-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #333;
+    color: #ddd;
+  }
+  
+  .dark-mode h2, .dark-mode h3, .dark-mode p {
+    color: #ddd;
+  }
+  
+  .dark-mode .social-icons a {
+    color: #ddd;
+  }
+  
+  .dark-mode .contact-btn {
+    background-color: #555;
+  }
+  
+  .dark-mode .contact-btn:hover {
+    background-color: #777;
+  }
+
+  button{
+    margin: 0 15px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .profile-card {
+      max-width: 90%;
+    }
+  }
+  
